@@ -1,0 +1,37 @@
+
+|         news         |     |       photo-report      |      |          video        |     |     obituary          |   |     leader     |    
+------------------------     ---------------------------       ------------------------     -------------------------    ---------------
+| title | body         |     | title      |    body    |      | title  |   url        |     | name | rank | biography|  |  name | position|
+
+
+
+
+|   representation           |      |                   school                           |     |             club                     |
+------------------------------       -----------------------------------------------------     ---------------------------------------- 
+|  city  | adress | president|      | name | director_name | phone | adress| email| site |     | name | director_name| adress | email |
+
+
+
+
+
+|                   sport_club                        |       |        commercial_enterprise                         |      
+-------------------------------------------------------        -------------------------------------------------------       
+| name | adress | director_name | email| phone | site |       | name | director_name | adress | phone | email | site |      
+
+
+
+
+    |                   security_enterprise                 |      |        payment        |
+     --------------------------------------------------------      -------------------------   1 ______________________________________________________________  
+    | name | adress | director_name |  phone | email | site |      |   title   |    text   |                                                                  |    
+                                                                                                                                                              |
+                                                                                                                                                              | 
+    |                                                           bank_detail                                                  |________________________________|                                  |
+    -------------------------------------------------------------------------------------------------------------------------   1                                         
+    | name | adress | phone | settlement_account | correspondent_account | BIK | bank_name | INN | KPP | OKPO | OGRN | OKWED |
+
+
+    |                      pages                |         |         award       |       |   support |
+    ---------------------------------------------          ----------------------       -------------  1___________* |                                  bank_detail_suport |
+    | history| regulation | newspaper | contact |         |  name  | text       |       |  text     |                 --------------------------------------------------------------------------------------
+                                                                                                                      | name | INN | KPP |  BIK | settlement_account | correspondent_account | appointment |
