@@ -1,0 +1,11 @@
+<h1>News: </h1>
+
+<% if @news %>
+  <% @news.each do |new|%>
+    <p class="italic">
+      <%= new.title %>
+      <%= new.body %>
+    </p>
+    <hr/>
+  <% end %>
+<% end %>
