@@ -1,9 +1,11 @@
-<h1>News: </h1>
+<h1 class="text-red-500">News: </h1>
 
 <% if @news %>
   <% @news.each do |new|%>
     <p class="italic">
       <%= new.title %>
+    </p>
+    <p class="font-bold">  
       <%= new.body %>
     </p>
     <hr/>
