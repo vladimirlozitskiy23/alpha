@@ -1,0 +1,23 @@
+<%= form_with(model: @new, local: true, data: { turbo: false }, url: news_index_path) do |form|%>
+
+<div>
+  <%= form.text_field :title %>
+</div>
+  
+<div>
+  <%= form.rich_text_area :body %>
+</div>
+
+<div>
+  <%= form.label :image %>
+  <%= form.file_field :image %>
+</div>
+
+<div>
+  <%= form.label :pictures %>
+  <%= form.file_field :pictures, multiple: true %>
+</div>
+
+<%= form.submit%>
+
+<% end %>

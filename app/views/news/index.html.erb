@@ -1,3 +1,5 @@
+
+
 <h1 class="text-red-500">News: </h1>
 
 <% if @news %>
@@ -8,6 +10,11 @@
     <p class="font-bold">  
       <%= new.body %>
     </p>
+
+    <%= button_to 'Delete', news_path(new), data:{ turbo: false }, method: :delete %>
+    <%= link_to 'Show', news_path(new), data:{ turbo: false } %>
     <hr/>
   <% end %>
 <% end %>
+
+
