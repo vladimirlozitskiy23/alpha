@@ -1,0 +1,11 @@
+
+
+<p class="italic">
+      <%= news.title %>
+    </p>
+    <p class="font-bold">  
+      <%= news.body %>
+    </p>
+
+    <%= button_to 'Delete', news_path(news), data:{ turbo: false }, method: :delete %>
+    <%= link_to 'Show', news_path(news), data:{ turbo: false } %>
