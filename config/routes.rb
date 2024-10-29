@@ -5,11 +5,11 @@ Rails.application.routes.draw do
    root "news#index"
    resources :news
 
-   get 'pages/history', to: 'pages#history'
-   get 'pages/contacts', to: 'pages#contacts'
-   get 'pages/support', to: 'pages#support'
-   get 'pages/payment,', to: 'pages#payment,'
-   get 'pages/award,', to: 'pages#award,'
-   get 'pages/newspaper', to: 'pages#newspaper'
+   get '/history', to: 'pages#history'
+   get '/contacts', to: 'pages#contacts'
+   get '/support', to: 'pages#support'
+   get '/payment', to: 'pages#payment'
+   get '/award', to: 'pages#award'
+   get '/newspaper', to: 'pages#newspaper'
 
 end
