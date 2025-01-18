@@ -12,38 +12,130 @@
   </head>
 
   <body>
-    <%# <main class="container mx-auto mt-28 px-5 flex"> %>
-    <main class="container mx-auto mt-28 px-5 ">
+          <%# <main class="container mx-auto mt-28 px-5 flex"> %>
+          <main class="container mx-auto mt-28 px-5 ">
 
-<header class="lg:px-16 px-4 bg-white flex flex-wrap items-center py-4 shadow-md">
-    <div class="flex-1 flex justify-between items-center">
-        <a href="/news" class="text-xl">Альфа</a>
-    </div>
+      <header class="lg:px-16 px-4 bg-white flex flex-wrap items-center py-4 shadow-md">
+          <div class="flex-1 flex justify-between items-center">
+              <a href="/news" class="text-xl">Альфа</a>
+          </div>
 
-    <label for="menu-toggle" class="pointer-cursor md:hidden block">
-      <svg class="fill-current text-gray-900"
-        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-        <title>menu</title>
-        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-      </svg>
-    </label>
-    <input class="hidden" type="checkbox" id="menu-toggle" />
 
-    <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
-        <nav>
-            <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
-                <li><a class="md:p-4 py-3 px-0 block" href="/history">History</a></li>
-                <li><a class="md:p-4 py-3 px-0 block" href="/contacts">Contacts</a></li>
-                <li><a class="md:p-4 py-3 px-0 block" href="/support">Support</a></li>
-                <li><a class="md:p-4 py-3 px-0 block" href="/payment">Payment</a></li>
-                <li><a class="md:p-4 py-3 px-0 block" href="/award">Award</a></li>
-                <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="/newspaper">Newspaper</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
 
-      <%= yield %>
-    </main>
+          
+         <label for="menu-toggle" class="pointer-cursor md:hidden block">
+            <svg class="fill-current text-gray-900"
+              xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+              <title>menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </label>
+
+
+          <input class="hidden" type="checkbox" id="menu-toggle" />
+
+          
+          
+          <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+              <nav>
+                  <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+
+
+                    <li>
+
+                      
+                            <ul class="flex flex-col gap-2 max-w-[280px] mx-auto mt-24">
+
+                          <li>
+                             
+                             <details class="group">
+
+                                <summary
+                                    class="flex items-center justify-between gap-2 p-2 font-medium marker:content-none 
+                                    hover:cursor-pointer">
+
+                                    <span class="flex gap-2">
+                                        <span>
+                                            Prajwal Hallale
+                                        </span>
+                                    </span>
+                                  
+                                </summary>
+
+                           
+                           
+                            <article class="px-4 pb-4">
+
+                                <ul class="flex flex-col gap-4 pl-2 mt-4">
+
+                                    <li class="flex gap-2">
+                                        
+                                        <a href="http://127.0.0.1:8000/user/dashboard">
+                                            Dashboard
+                                        </a>
+                                    </li>
+
+
+                                    <li class="flex gap-2">
+                                        
+
+                                        <a href="http://127.0.0.1:8000/user/study-lists">
+                                            Study Lists
+                                        </a>
+                                    </li>
+
+
+                                    <li class="flex gap-2">
+                                      
+                                        <a href="http://127.0.0.1:8000/user/contribution">
+                                            Your contribution
+                                        </a>
+                                    </li>
+
+
+                                    <li class="flex gap-2">
+                                        
+
+                                        <a href="http://127.0.0.1:8000/user/settings">
+                                            Settings
+                                        </a>
+                                    </li>
+
+
+                                    
+
+                                </ul>
+
+                            </article>
+
+                        </details>
+
+
+                    </li>
+
+                  </ul>
+                    
+                             <li><a class="md:p-4 py-3 px-0 block" href="/history">History</a></li>
+                                <li><a class="md:p-4 py-3 px-0 block" href="/contacts">Contacts</a></li>
+                                <li><a class="md:p-4 py-3 px-0 block" href="/support">Support</a></li>
+                                <li><a class="md:p-4 py-3 px-0 block" href="/payment">Payment</a></li>
+                                <li><a class="md:p-4 py-3 px-0 block" href="/award">Award</a></li>
+                                <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="/newspaper">Newspaper</a></li>
+
+                    
+
+                </li>
+
+
+
+
+                                
+                  </ul>
+              </nav> 
+          </div>
+        </header>
+
+            <%= yield %>
+          </main>
   </body>
 </html>
