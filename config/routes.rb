@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
    root "news#index"
    resources :news
+   resources :photo_reports
 
    get '/history', to: 'pages#history'
    get '/contacts', to: 'pages#contacts'
