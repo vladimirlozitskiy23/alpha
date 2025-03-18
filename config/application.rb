@@ -11,6 +11,18 @@ module Alpha
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    config.after_initialize do
+      ActionText::ContentHelper.allowed_attributes.add 'style'
+      ActionText::ContentHelper.allowed_attributes.add 'controls'
+      ActionText::ContentHelper.allowed_attributes.add 'poster'
+
+      ActionText::ContentHelper.allowed_tags.add 'video'
+      ActionText::ContentHelper.allowed_tags.add 'audio'
+      ActionText::ContentHelper.allowed_tags.add 'source'
+      ActionText::ContentHelper.allowed_tags.add 'embed'
+      ActionText::ContentHelper.allowed_tags.add 'iframe'
+    end
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
