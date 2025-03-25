@@ -2,6 +2,7 @@ class NewsController < ApplicationController
 
   def index
     @news = News.all
+    @photo_report = PhotoReport.all
   end
 
   def new

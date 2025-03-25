@@ -1,0 +1,9 @@
+<p class="italic">
+      <%= photo_report.title %>
+    </p>
+    <p class="font-bold">  
+      <%= photo_report.body %>
+    </p>
+
+    <%= button_to 'Delete', photo_report_path(photo_report), data:{ turbo: false }, method: :delete %>
+    <%= link_to 'Show', photo_report_path(photo_report), data:{ turbo: false } %>

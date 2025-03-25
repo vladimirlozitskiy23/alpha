@@ -5,6 +5,8 @@ class PhotoReportsController < ApplicationController
 
   def index
     @photo_report = PhotoReport.all
+    @news = News.all
+    render "news/index"
   end
 
   def create 
