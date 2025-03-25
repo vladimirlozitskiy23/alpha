@@ -6,6 +6,7 @@ class PhotoReportsController < ApplicationController
   def index
     @photo_report = PhotoReport.all
     @news = News.all
+    @video = Video.all
     render "news/index"
   end
 

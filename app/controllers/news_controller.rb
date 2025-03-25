@@ -3,6 +3,7 @@ class NewsController < ApplicationController
   def index
     @news = News.all
     @photo_report = PhotoReport.all
+    @video = Video.all
   end
 
   def new

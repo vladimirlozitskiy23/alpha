@@ -5,6 +5,7 @@ Rails.application.routes.draw do
    root "news#index"
    resources :news
    resources :photo_reports
+   resources :videos
 
    get '/history', to: 'pages#history'
    get '/contacts', to: 'pages#contacts'
