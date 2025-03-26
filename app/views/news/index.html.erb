@@ -1,8 +1,11 @@
 
 <h1 class="text-red-500">News: </h1>
+
 <div class="container">
-<%= render @news %>
-<%= render @photo_report %>
-<%= render @video %>
+  <div class="flex flex-row">
+    <div class="basis-1/4"><%= render @news %></div>
+    <div class="basis-1/4"><%= render @photo_report %></div>
+    <div class="basis-1/4"><%= render @video %></div>
+  </div>
 </div>
 
