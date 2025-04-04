@@ -1,9 +1,0 @@
-<p class="italic">
-      <%= video.title %>
-    </p>
-    <p class="font-bold">  
-      <%= video.url %>
-    </p>
-
-    <%= button_to 'Delete', video_path(video), data:{ turbo: false }, method: :delete %>
-    <%= link_to 'Show', photo_report_path(video), data:{ turbo: false } %>
