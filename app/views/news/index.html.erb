@@ -1,11 +1,32 @@
 
 <h1 class="text-red-500">News: </h1>
 
+
 <div class="container">
+
+  <div class="grid grid-cols-4 gap-4">
+
+    <% @news.each do |new|%>
+      <div><%= render new%></div>
+    <% end%>
+      
+  </div>
+
+  <div class="grid grid-cols-4 gap-4">
+
+    <% @photo_report.each do |photo|%>
+      <div><%= render photo%></div>
+    <% end%>
+      
+  </div>
+
+
   <div class="grid grid-cols-3 gap-4">
-     <div class="..."><%= render @news %></div>
-       <div class="col-span-2 ..."><%= render @photo_report %></div>
-     <div><%= render @video %></div>
+
+    <% @video.each do |vid|%>
+      <div><%= render vid %></div>
+    <% end%>
+      
   </div>
 </div>
 
