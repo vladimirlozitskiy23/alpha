@@ -4,20 +4,26 @@
 
 <div class="container">
 
+  
+
   <div class="grid grid-cols-4 gap-4">
 
-    <% @news.each do |new|%>
-      <div><%= render new%></div>
-    <% end%>
       
-  </div>
 
-  <div class="grid grid-cols-4 gap-4">
+          <div class="grid grid-rows-3 grid-flow-col gap-4">
+
+            <% @news.each do |new|%>
+              <div><%= render new%></div>
+            <% end%>
+
+      
+          </div>
 
     <% @photo_report.each do |photo|%>
       <div><%= render photo%></div>
-    <% end%>
-      
+      <% end%>
+
+    
   </div>
 
 
