@@ -1,0 +1,22 @@
+<p class="italic">
+      <%= employee.name %>
+</p>
+
+<p class="italic">
+      <%= employee.rank %>
+</p>
+
+<p class="italic">
+      <%= employee.position %>
+</p>
+
+<p class="italic">
+      <%= employee.biography %>
+</p>
+    
+<p class="italic">
+      <%= employee.award %>
+</p>    
+
+    <%= button_to 'Delete', employee_path(employee), data:{ turbo: false }, method: :delete %>
+    <%= link_to 'Show', employee_path(employee), data:{ turbo: false } %>

@@ -1,0 +1,40 @@
+<%= form_with(model: @employee, local: true, data: { turbo: false }, url: employees_path) do |form|%>
+
+<div>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+</div>
+
+<div>
+  <%= form.label :rank %>
+  <%= form.text_field :rank %>
+</div>
+
+<div>
+  <%= form.label :position %>
+  <%= form.text_field :position%>
+</div>
+
+<div>
+  <%= form.label :award %>
+  <%= form.text_field :award %>
+</div>
+  
+<div>
+  <%= form.label :biography %>
+  <%= form.rich_text_area :biography %>
+</div>
+
+<div>
+  <%= form.label :image %>
+  <%= form.file_field :image %>
+</div>
+
+<div>
+  <%= form.label :pictures %>
+  <%= form.file_field :pictures, multiple: true %>
+</div>
+
+<%= form.submit%>
+
+<% end %>
