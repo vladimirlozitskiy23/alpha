@@ -1,5 +1,5 @@
 class Employee < ApplicationRecord
   has_one_attached :image
   has_many_attached :pictures
-  has_rich_text :name, :rank, :position, :award, :biography
+  has_rich_text :biography
 end
