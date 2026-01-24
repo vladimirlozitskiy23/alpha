@@ -6,7 +6,7 @@ Rails.application.routes.draw do
    resources :news
    resources :photo_reports
    resources :videos
-   resource  :employee, only: [:new]
+   resource  :employee, only: [:new, :index]
 
    get '/history', to: 'pages#history'
    get '/contacts', to: 'pages#contacts'
