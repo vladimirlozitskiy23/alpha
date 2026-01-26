@@ -10,7 +10,7 @@ class SportClubsController < ApplicationController
 
   def create 
     @sport_club = SportClub.new(new_params)
-    if @sport_club=.save 
+    if @sport_club.save 
       redirect_to @sport_club
     else
       render :new

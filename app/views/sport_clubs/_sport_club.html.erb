@@ -1,0 +1,26 @@
+<p class="italic">
+      <%= sport_club.name %>
+</p>
+
+<p class="italic">
+      <%= sport_club.director_name %>
+</p>
+
+<p class="italic">
+      <%= sport_club.adress %>
+</p>
+
+<p class="italic">
+      <%= sport_club.phone %>
+</p>
+    
+<p class="italic">
+      <%= sport_club.email %>
+</p>    
+
+<p class="italic">
+      <%= sport_club.site %>
+</p>    
+
+    <%= button_to 'Delete', sport_club_path(sport_club), data:{ turbo: false }, method: :delete %>
+    <%= link_to 'Show', sport_club_path(sport_club), data:{ turbo: false } %>
