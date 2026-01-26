@@ -1,0 +1,19 @@
+<p class="italic">
+      <%= club.name %>
+</p>
+
+<p class="italic">
+      <%= club.director_name %>
+</p>
+
+<p class="italic">
+      <%= club.adress %>
+</p>
+
+<p class="italic">
+      <%= club.email %>
+</p>
+    
+
+    <%= button_to 'Delete', club_path(club), data:{ turbo: false }, method: :delete %>
+    <%= link_to 'Show', club_path(club), data:{ turbo: false } %>
