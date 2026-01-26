@@ -1,0 +1,15 @@
+<p class="italic">
+      <%= representation.sity %>
+</p>
+
+<p class="italic">
+      <%= representation.adress %>
+</p>
+    
+<p class="italic">
+      <%= representation.president %>
+</p>    
+
+
+    <%= button_to 'Delete', representation_path(representation), data:{ turbo: false }, method: :delete %>
+    <%= link_to 'Show', representation_path(representation), data:{ turbo: false } %></br>
