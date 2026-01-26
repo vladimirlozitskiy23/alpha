@@ -10,6 +10,7 @@ Rails.application.routes.draw do
    resources :representations
    resources :schools
    resources :clubs
+   resources :sport_clubs
 
    get '/history', to: 'pages#history'
    get '/contacts', to: 'pages#contacts'
