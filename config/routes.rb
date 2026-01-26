@@ -7,7 +7,7 @@ Rails.application.routes.draw do
    resources :photo_reports
    resources :videos
    resources :employees
-   resources :representation
+   resources :representations
 
    get '/history', to: 'pages#history'
    get '/contacts', to: 'pages#contacts'
