@@ -1,0 +1,26 @@
+<p class="italic">
+      <%= commercial.name %>
+</p>
+
+<p class="italic">
+      <%= commercial.director_name %>
+</p>
+
+<p class="italic">
+      <%= commercial.adress %>
+</p>
+
+<p class="italic">
+      <%= commercial.phone %>
+</p>
+    
+<p class="italic">
+      <%= commercial.email %>
+</p>    
+
+<p class="italic">
+      <%= commercial.site %>
+</p>    
+
+    <%= button_to 'Delete', commercial_path(commercial), data:{ turbo: false }, method: :delete %>
+    <%= link_to 'Show', commercial_path(commercial), data:{ turbo: false } %>
