@@ -1,0 +1,26 @@
+<p class="italic">
+      <%= school.name %>
+</p>
+
+<p class="italic">
+      <%= school.director_name %>
+</p>
+
+<p class="italic">
+      <%= school.adress %>
+</p>
+
+<p class="italic">
+      <%= school.phone %>
+</p>
+    
+<p class="italic">
+      <%= school.email %>
+</p>    
+
+<p class="italic">
+      <%= school.site %>
+</p>    
+
+    <%= button_to 'Delete', school_path(school), data:{ turbo: false }, method: :delete %>
+    <%= link_to 'Show', school_path(school), data:{ turbo: false } %>
