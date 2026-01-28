@@ -1,7 +1,7 @@
 class SecuritiesController < ApplicationController
 
   def index
-    @security = security.all
+    @security = Security.all
   end
 
   def new

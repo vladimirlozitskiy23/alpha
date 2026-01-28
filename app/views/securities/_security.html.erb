@@ -1,0 +1,26 @@
+<p class="italic">
+      <%= security.name %>
+</p>
+
+<p class="italic">
+      <%= security.director_name %>
+</p>
+
+<p class="italic">
+      <%= security.adress %>
+</p>
+
+<p class="italic">
+      <%= security.phone %>
+</p>
+    
+<p class="italic">
+      <%= security.email %>
+</p>    
+
+<p class="italic">
+      <%= security.site %>
+</p>    
+
+    <%= button_to 'Delete', security_path(security), data:{ turbo: false }, method: :delete %>
+    <%= link_to 'Show', security_path(security), data:{ turbo: false } %>
