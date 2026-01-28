@@ -12,6 +12,7 @@ Rails.application.routes.draw do
    resources :clubs
    resources :sport_clubs
    resources :commercials
+   resources :securities
 
    get '/history', to: 'pages#history'
    get '/contacts', to: 'pages#contacts'
