@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2026_01_28_142959) do
+ActiveRecord::Schema[7.0].define(version: 2026_01_28_161404) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -52,6 +52,25 @@ ActiveRecord::Schema[7.0].define(version: 2026_01_28_142959) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
+  create_table "bank_details", force: :cascade do |t|
+    t.bigint "payment_id"
+    t.string "name"
+    t.string "adress"
+    t.string "phone"
+    t.string "settlement_account"
+    t.string "correspondent_account"
+    t.string "BIK"
+    t.string "bank_name"
+    t.string "INN"
+    t.string "KPP"
+    t.string "OKPO"
+    t.string "OGRN"
+    t.string "OKWED"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["payment_id"], name: "index_bank_details_on_payment_id"
+  end
+
   create_table "clubs", force: :cascade do |t|
     t.string "name"
     t.string "director_name"
@@ -85,6 +104,13 @@ ActiveRecord::Schema[7.0].define(version: 2026_01_28_142959) do
   create_table "news", force: :cascade do |t|
     t.text "title"
     t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "payments", force: :cascade do |t|
+    t.string "title"
+    t.string "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
