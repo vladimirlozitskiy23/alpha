@@ -1,0 +1,10 @@
+<p class="italic">
+      <%= payment.title %>
+</p>
+
+<p class="italic">
+      <%= payment.body %>
+</p>
+
+    <%= button_to 'Delete', payment_path(payment), data:{ turbo: false }, method: :delete %>
+    <%= link_to 'Show', payment_path(payment), data:{ turbo: false } %>

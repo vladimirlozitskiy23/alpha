@@ -30,7 +30,7 @@ class PaymentsController < ApplicationController
   private
 
   def new_params
-    params.require(:payment).permit(:title, :text,  pictures:[])
+    params.require(:payment).permit(:title, :body,  pictures:[])
   end  
 
 end
