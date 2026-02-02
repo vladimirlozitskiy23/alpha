@@ -19,6 +19,7 @@ class PaymentsController < ApplicationController
 
   def show
     @payment = Payment.find(params[:id])
+    @bank_detail = @payment.build_bank_detail
   end
 
   def destroy

@@ -1,2 +1,68 @@
 <p><%= @payment.title %></p>
 <p><%= @payment.body %></p>
+
+<%= form_with(model: [@payment,@bank_detail], local: true, data: {turbo: false}) do |f| %>
+    <p>
+        <%= f.label :name %><br/>
+        <%= f.text_field :name %>
+    </p>
+
+    <p>
+        <%= f.label :adress %><br/>
+        <%= f.text_area :adress %>
+    </p>
+
+    <p>
+        <%= f.label :phone %><br/>
+        <%= f.text_field :phone %>
+    </p>
+
+    <p>
+        <%= f.label :settlement_account %><br/>
+        <%= f.text_field :settlement_account %>
+    </p>
+
+    <p>
+        <%= f.label :correspondent_account %><br/>
+        <%= f.text_field :correspondent_account %>
+    </p>
+
+    <p>
+        <%= f.label :BIK %><br/>
+        <%= f.text_field :BIK %>
+    </p>
+
+    <p>
+        <%= f.label :bank_name %><br/>
+        <%= f.text_field :bank_name %>
+    </p>
+
+    <p>
+        <%= f.label :INN %><br/>
+        <%= f.text_field :INN %>
+    </p>
+
+    <p>
+        <%= f.label :KPP %><br/>
+        <%= f.text_field :KPP %>
+    </p>
+
+    <p>
+        <%= f.label :OKPO %><br/>
+        <%= f.text_field :OKPO %>
+    </p>
+
+    <p>
+        <%= f.label :OGRN %><br/>
+        <%= f.text_field :OGRN %>
+    </p>
+
+    <p>
+        <%= f.label :OKWED %><br/>
+        <%= f.text_field :OKWED %>
+    </p>
+
+    <p>
+        <%= f.submit %>
+    </p>
+<% end%>
