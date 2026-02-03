@@ -1,0 +1,18 @@
+<p class="italic">
+      <%= obituary.name %>
+</p>
+
+<p class="italic">
+      <%= obituary.rank %>
+</p>
+
+<p class="italic">
+      <%= obituary.biography %>
+</p>
+
+<p class="italic">
+      <%= obituary.death %>
+</p>
+
+    <%= button_to 'Delete', obituary_path(obituary), data:{ turbo: false }, method: :delete %>
+    <%= link_to 'Show', obituary_path(obituary), data:{ turbo: false } %>
