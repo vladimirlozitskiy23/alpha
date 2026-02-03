@@ -13,6 +13,7 @@ Rails.application.routes.draw do
    resources :sport_clubs
    resources :commercials
    resources :securities
+   resources :obituaries
    resources :payments do
       resources :bank_details
    end
