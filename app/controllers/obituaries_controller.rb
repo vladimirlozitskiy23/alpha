@@ -1,7 +1,7 @@
 class ObituariesController < ApplicationController
 
   def index
-    @obituaries = Obituary.all
+    @obituaries = Obituary.order(:death)
   end
 
   def new
