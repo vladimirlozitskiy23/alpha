@@ -14,6 +14,7 @@ Rails.application.routes.draw do
    resources :commercials
    resources :securities
    resources :obituaries
+   resources :authorities
    resources :payments do
       resources :bank_details
    end
