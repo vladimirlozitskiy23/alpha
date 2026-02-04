@@ -21,6 +21,20 @@ class ObituariesController < ApplicationController
     @obituary = Obituary.find(params[:id])
   end
 
+  def edit
+    @obituary = Obituary.find(params[:id])
+  end
+
+  def update
+    @obituary = Obituary.find(params[:id])
+    if @obituary.update(obituary_params)
+      redirect_to @obituary
+    else
+      render :edit
+    end
+      
+  end
+
   def destroy
     @obituary = Obituary.find(params[:id])
     @obituary.destroy

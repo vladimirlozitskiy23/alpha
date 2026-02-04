@@ -1,0 +1,35 @@
+<%= form_with(model: @obituary, local: true, data: { turbo: false }, url: obituary_path(@obituary) ) do |form|%>
+
+<div>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+</div>
+
+<div>
+  <%= form.label :rank %>
+  <%= form.text_field :rank %>
+</div>
+
+<div>
+  <%= form.label :death %>
+  <%= form.date_field :death %>
+</div>
+  
+<div>
+  <%= form.label :biography %>
+  <%= form.rich_text_area :biography %>
+</div>
+
+<div>
+  <%= form.label :image %>
+  <%= form.file_field :image %>
+</div>
+
+<div>
+  <%= form.label :pictures %>
+  <%= form.file_field :pictures, multiple: true %>
+</div>
+
+<%= form.submit%>
+
+<% end %>
