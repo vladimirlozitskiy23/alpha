@@ -1,0 +1,7 @@
+<p><%= authority.name %></p>
+<p><%= authority.rank  %></p>
+<p><%= authority.position %></p>
+<p><%= authority.biography %></p>
+
+<%= button_to 'Delete', authority_path(authority), data:{ turbo: false }, method: :delete %>
+<%= link_to 'Show', authority_path(authority) %>
