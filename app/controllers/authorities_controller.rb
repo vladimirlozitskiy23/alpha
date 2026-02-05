@@ -18,6 +18,19 @@ def show
   @authority = Authority.find(params[:id])
 end
 
+def edit
+  @authority = Authority.find(params[:id])
+end
+
+def update
+  @authority = Authority.find(params[:id])
+  if @authority.update(authority_params)
+    redirect_to @authority
+  else
+    render :edit
+  end
+end
+
 def authority_params
   params.require(:authority).permit(:name, :rank, :position, :biography, :status )
 end
