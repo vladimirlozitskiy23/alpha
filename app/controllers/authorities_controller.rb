@@ -1,5 +1,9 @@
 class AuthoritiesController < ApplicationController
 
+def index
+  @authorities = Authority.order(:status)
+end
+
 def new
   @authority = Authority.new
 end
@@ -29,6 +33,12 @@ def update
   else
     render :edit
   end
+end
+
+def destroy
+  @authority = Authority.find(params[:id])
+  @authority.destroy
+  redirect_to authorities_path
 end
 
 def authority_params
