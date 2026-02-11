@@ -1,0 +1,25 @@
+<%= form_with(model: @award, local: true, data: { turbo: false } ) do |form|%>
+
+<div>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+</div>
+  
+<div>
+  <%= form.label :text %>
+  <%= form.rich_text_area :text %>
+</div>
+
+<div>
+  <%= form.label :image %>
+  <%= form.file_field :image %>
+</div>
+
+<div>
+  <%= form.label :pictures %>
+  <%= form.file_field :pictures, multiple: true %>
+</div>
+
+<%= form.submit%>
+
+<% end %>
