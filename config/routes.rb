@@ -15,6 +15,7 @@ Rails.application.routes.draw do
    resources :securities
    resources :obituaries
    resources :authorities
+   resources :awards
    resources :payments do
       resources :bank_details
    end
