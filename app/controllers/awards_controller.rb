@@ -14,6 +14,19 @@ def create
   end
 end
 
+def edit
+  @award = Award.find(params[:id])
+end
+
+def update
+  @award = Award.find(params[:id])
+  if @award.update(awards_params)
+    redirect_to @award
+  else
+    render :edit
+  end
+end
+
 def show 
   @award = Award.find(params[:id])
 end
