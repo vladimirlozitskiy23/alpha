@@ -1,5 +1,9 @@
 class AwardsController < ApplicationController
 
+def index
+  @awards = Award.all
+end
+
 def new
   @award = Award.new  
 end
@@ -29,6 +33,12 @@ end
 
 def show 
   @award = Award.find(params[:id])
+end
+
+def destroy
+  @award = Award.find(params[:id])
+  @award.destroy
+  redirect_to @award
 end
 
 def awards_params
